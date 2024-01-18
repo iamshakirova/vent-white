@@ -1,0 +1,31 @@
+.home-inner{
+    background-image: url('../../images/bc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-inner h1{
+    color:#fff;
+    font-size: 55px;
+    margin: 0 100px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding:170px 0 20px;
+}
+.home-inner button{
+    margin: 100px 100px 70px;
+    padding: 17px 65px;
+    background-color: #014ea2;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 70px 0px rgba(255, 254, 254, 0.5);
+    border: 2px solid #014ea2;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.home-inner button:hover{
+    border:1px solid #014ea2;
+    background-color:white;
+    color: #014ea2;
+}

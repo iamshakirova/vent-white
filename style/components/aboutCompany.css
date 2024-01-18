@@ -1,0 +1,40 @@
+.about-company>h1 {
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid blue;
+    width: 510px;
+    padding: 0 10px 10px;
+    margin: 100px 0;
+}
+.company-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.content{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+    column-gap: 20px;  
+}
+.content img{
+    width: 100px;
+    height: 110px;
+}
+.content h1{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color:#014ea2;
+}
+.content p{
+    font-size: 16px;
+}
+.about-inner{
+    width: 100%;
+    background-image:url('../../images/abstract.webp');
+    background-size:cover;
+    background-repeat:no-repeat;
+}

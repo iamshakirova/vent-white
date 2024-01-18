@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Евразия Строй Сервис</title>
+    <script src="https://kit.fontawesome.com/a615388c88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="style/all.css">
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="head-logo">
+                <img src="images/logo.jpeg" alt="">
+                <h1>Поставщик <br> вентиляционного оборудования</h1>
+            </div>
+            <div class="head-numbers">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="">+7 707 926 18 21</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="">+7 707 926 18 21</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="">+7 707 926 18 21</a>
+                </div>
+
+            </div>
+            <div class="head-media">
+                <a class="fa-brands fa-telegram"></a>
+                <a class="fa-brands fa-whatsapp"></a>
+                <a class="fa-regular fa-envelope"></a>
+            </div>
+        </div>
+        <div class="navigation">
+            <a>Главная</a>
+            <a>Продукция</a>
+            <a>О нас</a>
+            <a>Проекты</a>
+            <a>Контакты</a>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-inner">
+            <h1>ПРОМЫШЛЕННАЯ ВЕНТИЛЯЦИЯ И КОНДИЦИОНИРОВАНИЕ В КАЗАХСТАНЕ</h1>
+            <div class="home-btn">
+                <button onclick="showFirstAdapt()">Узнать стоимость</button>
+            </div>
+        </div>
+        <div class="container-fr">
+            <div class="content-fr" id="form-window">
+                <div class="right-side">
+                    <button id="close-button" onclick="closeFirstAdapt()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="topic-text">ЗАПОЛНИТЕ ФОРМУ</div>
+                    <p>
+                        Наш менеджер свяжется с Вами и подготовит расчет!
+                    </p>
+					<div class="contentForm">
+						<form action="sender.php" method="post">
+        					<input type="text" class="name" name="name" placeholder="Имя" required>
+        					<input type="text" class="phone" name="phone" placeholder="Телефон" required>
+        					<input type="email" name="email" placeholder="Email" required>
+							<textarea name="text" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        					<button type="button" class="send-form">Отправить форму</button>
+        					<div class="status"></div>
+    					</form>
+					</div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="products-inner container">
+            <h1>Наш ассортимент</h1>
+            <div class="prod-filling">
+                <div class="prod">
+                    <img src="images/prod1.webp" alt="">
+                    <h1>Приточно-вытяжные агрегаты</h1>
+                    <ul>
+                        <li>Приточные установки с электрическим  и с водяным нагревом</li>
+                        <li>Приточные установки с рекуперацией тепла</li>
+                        <li>Компактные приточные установки</li>
+                        <li>Каркасно-панельные установки</li>
+                        <li>Канальные вентиляционные агрегаты</li>
+                    </ul>
+                    <button onclick="showFirstAdapt()">Связаться</button>
+                </div>
+                <div class="prod">
+                    <img src="images/prod2.webp" alt="">
+                    <h1>Чиллеры</h1>
+                    <ul>
+                        <li>Чиллеры с воздушным охлаждением, с осевыми вентиляторами, наружной установки </li>
+                        <li>Чиллеры с воздушным охлаждением конденсатора, с центробежными вентиляторами, внутренней установки</li>
+                        <li>Чиллеры с водяным охлаждением конденсатора</li>
+                        <li>Чиллеры с выносным конденсатором</li>
+                    </ul>
+                    <button onclick="showFirstAdapt()">Связаться</button>
+                </div>
+                <div class="prod">
+                    <img src="images/prod3.webp" alt="">
+                    <h1>Фанкойлы</h1>
+                    <ul>
+                        <li>Кондиционеры настенные и колонные</li>
+                        <li>Кондиционеры мобильные и кассетные</li>
+                        <li>Кондиционеры канальные и прецизионные</li>
+                        <li>крышные, лифтовые и напольно-потолочные</li>
+                    </li>
+                    <button onclick="showFirstAdapt()">Связаться</button>
+                </div>
+                <div class="prod">
+                    <img src="images/prod4.webp" alt="">
+                    <h1>Компрессорно-конденсаторные блоки</h1>
+                    <ul>
+                        <li>Воздушного охлаждения с центробежными вентиляторами</li>
+                        <li>Воздушного охлаждения с осевыми вентиляторами</li>
+                        <li>Водяного охлаждения</li>
+                        <li>С выносным конденсатором</li>
+                    </ul>
+                    <button onclick="showFirstAdapt()">Связаться</button>
+                </div>
+                <div class="prod">
+                    <img src="images/prod5.webp" alt="">
+                    <h1>Вентиляторы</h1>
+                    <ul>
+                        <li>Вентиляторы радиальные, канальные, осевые и крышные</li>
+                        <li>Нагреватели и охладители/li>
+                        <li>Клапаны и заслонки </li>
+                        <li>Фильтрующие элементы</li>
+                        <li>Вентиляционные установки</li>
+                    </ul>
+                    <button onclick="showFirstAdapt()">Связаться</button>
+                </div>
+                <div class="prod">
+                    <img src="images/prod6.webp" alt="">
+                    <h1>Воздушно-отопительные агрегаты</h1>
+                    <ul>
+                        <li>Воздушно-отопительные агрегаты</li>
+                        <li>Водяные тепловентиляторы</li>
+                        <li>Газовые воздухонагреватели</li>
+                    </ul>
+                    <button onclick="showFirstAdapt()">Связаться</button>
+                </div>
+                <div class="prod">
+                    <img src="images/prod7.webp" alt="">
+                    <h1>Воздушно-тепловые завесы</h1>
+                    <ul>
+                        <li>Тепловые завесы с электрическим обогревом,</li>
+                        <li>С водяным обогревом и без обогрева,</li>
+                        <li>Воздушная завеса</li>
+                        <li>Воздушно-тепловая завеса</li>
+                    </ul>
+                    <button onclick="showFirstAdapt()">Связаться</button>
+                </div>
+                <div class="prod">
+                    <img src="images/prod8.webp" alt="">
+                    <h1>Воздуховоды и фасонные изделия</h1>
+                    <ul>
+                        <li>Воздуховоды из оцинкованной стали, с полимерным покрытием</li>
+                        <li>Из тонколистовой стали,  из кровельной стали </li>
+                        <li>Из нержавеющей стали, гибкие воздуховоды</li>
+                    </ul>
+                    <button onclick="showFirstAdapt()">Связаться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-inner">
+        <div class="about-company container">
+            <h1>Преимущества нашей компании</h1>
+            <div class="company-content">
+                <div class="first">
+                    <img src="images/logo.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <img src="images/lider.jpeg" alt="">
+                    <div>
+                        <h1>Все товары, которые мы реализуем, обладают необходимыми сертификатами качества. </h1>
+                        <p>Мы придерживаемся строгих стандартов, удовлетворяя требованиям ГОСТ</p>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <img src="images/gaz.jpeg" alt="">
+                    <div>
+                        <h1>Осуществляем поставки для производства нефтегазоперерабатывающего оборудования ТОО АКТОБЕ МУНАЙ МАШ КОМПЛЕКТ.</h1>
+                        <p>А также, более 300 организаций ежегодно используют нашу продукцию для реализации сложнейших проектов по всему Казахстану, на территории Российской Федерации, Узбекистана и Киргизии.</p>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <img src="images/kraus.jpeg" alt="">
+                    <div>
+                        <h1>Мы предлагаем гибкую систему скидок на оптовые закупки и специальные условия для наших постоянных клиентов. </h1>
+                        <p>Наш приоритет - индивидуальный подход к каждому клиенту. Наши опытные менеджеры составят наиболее выгодное предложение для вас.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forms">
+        <h1>ЗАПОЛНИТЕ ФОРМУ И МЫ ПОДГОТОВИМ</h1>
+        <h2>ИНДИВИДУАЛЬНОЕ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</h2>
+        <div class="forms-inner container">
+            <div class="form-icon">
+                <div class="icon">
+                    <a href="">+7 707 926 18 21</a>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="">@mail.com</a>
+                </div>
+            </div>
+            <form action="sender.php" method="post">
+                <input class="first-form-f name" type="name" name="name" placeholder="Имя" required>
+                <input class="first-form-f phone" type="phone" name="phone" placeholder="Телефон" required> 
+                <button class="send-form" type="button">Отправить сообщение</button>
+                <div class="status"></div>
+            </form>
+        </div>
+    </section>
+    <section class="slider">
+        <h1>Поставки ТОО "Евразия Строй Сервис"</h1>
+        <div class="slider-inner container">
+            <div class="slider-nav">
+                <div>
+                    <a href="images/slider18.jpeg" data-fancybox="gallery">
+                        <img src="images/slider18.jpeg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider19.jpeg" data-fancybox="gallery">
+                        <img src="images/slider19.jpeg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider1.jpeg" data-fancybox="gallery">
+                        <img src="images/slider1.jpeg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider2.webp" data-fancybox="gallery">
+                        <img src="images/slider2.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider3.webp" data-fancybox="gallery">
+                        <img src="images/slider3.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider4.webp" data-fancybox="gallery">
+                        <img src="images/slider4.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider5.webp" data-fancybox="gallery">
+                        <img src="images/slider5.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider6.webp" data-fancybox="gallery">
+                        <img src="images/slider6.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider7.webp" data-fancybox="gallery">
+                        <img src="images/slider7.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider8.webp" data-fancybox="gallery">
+                        <img src="images/slider8.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider9.webp" data-fancybox="gallery">
+                        <img src="images/slider9.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider10.webp" data-fancybox="gallery">
+                        <img src="images/slider10.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider11.webp" data-fancybox="gallery">
+                        <img src="images/slider11.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider12.webp" data-fancybox="gallery">
+                        <img src="images/slider12.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider13.webp" data-fancybox="gallery">
+                        <img src="images/slider13.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider14.webp" data-fancybox="gallery">
+                        <img src="images/slider14.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider15.webp" data-fancybox="gallery">
+                        <img src="images/slider15.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider16.webp" data-fancybox="gallery">
+                        <img src="images/slider16.webp" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="images/slider17.webp" data-fancybox="gallery">
+                        <img src="images/slider17.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="directions">
+        <div class="directions-inner container">
+            <h1>Наши направления</h1>
+            <div class="direct-content">
+                <div class="direct">
+                    <div class="dir-image">
+                        <img src="images/bar.avif" alt="">
+                        <div class="item-txt">
+                            <h1>В БАРАХ И РЕСТОРАНАХ</h1>
+                        </div>
+                    </div>
+                    <div class="dir-image">
+                        <img src="images/market.avif" alt="">
+                        <div class="item-txt">
+                            <h1>В ТОРГОВЫХ ЦЕНТРАХ И ОФИСАХ</h1>
+                        </div>
+                    </div>
+                    <div class="dir-image">
+                        <img src="images/auditorium.avif" alt="">
+                        <div class="item-txt">
+                            <h1>В ОБРАЗОВАТЕЛЬНЫХ УЧРЕЖДЕНИЯХ</h1>
+                        </div>
+                    </div>
+                    <div class="dir-image">
+                        <img src="images/warehouse.avif" alt="">
+                        <div class="item-txt">
+                            <h1>В СКЛАДСКИХ ПОМЕЩЕНИЯХ</h1>
+                        </div>
+                    </div>
+                    <div class="dir-image">
+                        <img src="images/factory.avif" alt="">
+                        <div class="item-txt">
+                            <h1>В ПРОМЫШЛЕННЫХ ПРЕДПРИЯТИЯХ</h1>
+                        </div>
+                    </div>
+                    <div class="dir-image">
+                        <img src="images/eggs.avif" alt="">
+                        <div class="item-txt">
+                            <h1>В АГРАРНОМ СЕКТОРЕ</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forms">
+        <h1>ЗАПОЛНИТЕ ФОРМУ И МЫ ПОДГОТОВИМ</h1>
+        <h2>ИНДИВИДУАЛЬНОЕ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</h2>
+        <div class="forms-inner container">
+            <div class="form-icon">
+                <div class="icon">
+                    <a href="">+7 707 926 18 21</a>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="">@mail.com</a>
+                </div>
+            </div>
+            <form action="sender.php" method="post">
+                <input class="first-form-f name" type="name" name="name" placeholder="Имя" required>
+                <input class="first-form-f phone" type="phone" name="phone" placeholder="Телефон" required> 
+                <button class="send-form" type="button">Отправить сообщение</button>
+                <div class="status"></div>
+            </form>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="contacts-header container">
+            <h2>Наши Контакты</h2>
+            <div class="contacts-phone">
+                <div class="phone-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+7 707 926 18 21</span>
+                </div>
+                <div class="phone-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+7 707 926 18 21</span>
+                </div>
+            </div>
+            <p>Г.Алматы, Искендирова 29</p>
+        </div>
+        <form action="sender.php" method="post" class="contacts-form">
+            <input type="name" name="name" class="name" placeholder="Имя:" required>
+            <input type="phone" name="phone" class="phone" placeholder="Телефон:" required>
+            <input type="email" name="email" class="email" placeholder="E-mail:" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <button class="send-form" type="button">Отправить</button>
+            <div class="status"></div>
+        </form>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
