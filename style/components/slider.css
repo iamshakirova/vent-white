@@ -14,6 +14,12 @@
     padding: 50px 0 100px;
     border: 1px solid grey;
 }
+.slider-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 50px;
+}
 .slider h1{
     font-size: 30px;
     font-weight: 500;

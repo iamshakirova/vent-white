@@ -53,20 +53,34 @@
 }
 .form-icon{
     position: absolute;
-    top: 180px;
+    top: 240px;
     left: 130px;
 }
 .icon{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
-.icon a{
+/* .icon:nth-child(5){
     font-size: 20px;
     margin-right: 50px;
     text-decoration: none;
     color:black;
+} */
+.icon-flex{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
 }
-.icon i{
+.icon a{
     font-size: 35px;
     color:#014ea2;
     margin-right: 70px;
+    text-decoration: none;
+}
+.icon-ph a{
+    font-size: 20px;
+    color:#014ea2;
+    margin-right: 70px;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
