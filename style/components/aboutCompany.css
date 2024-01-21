@@ -38,3 +38,54 @@
     background-size:cover;
     background-repeat:no-repeat;
 }
+@media(max-width:1013px){
+    .first{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+}
+@media(max-width:607px){
+    .about-company>h1 {
+        font-size: 20px;
+        margin: 50px 0;
+        width: 70%;
+        padding-top: 30px;
+        line-height: 1.2;
+
+    }
+    .content{
+        margin-bottom: 40px;
+    }
+
+}
+@media(max-width:500px){
+    .content h1{
+        font-size: 15px;
+    }
+    .first img{
+        width: 70%;
+    }
+    .content p{
+        font-size: 12px;
+    }
+
+}
+@media(max-width:410px){
+    .content h1{
+        font-size: 13px;
+    }
+    .content img{
+        width: 60px;
+        height: 60px;
+    }
+
+}
+@media(max-width:350px){
+    .about-company>h1 {
+        font-size: 20px;
+        margin: 50px 0 20px;
+    }
+
+}

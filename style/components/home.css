@@ -29,3 +29,28 @@
     background-color:white;
     color: #014ea2;
 }
+@media(max-width:850px){
+    .home-inner h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:610px){
+    .home-inner h1{
+        font-size: 30px;
+        margin: 0 20px;
+        padding: 100px 0 0;
+    }
+    .home-inner button {
+        margin: 70px 20px 70px;
+    }
+}
+@media(max-width:410px){
+    .home-inner h1{
+        font-size: 20px;
+    }
+    .home-inner button {
+        padding: 17px 25px;
+        font-size: 10px;
+    }
+
+}

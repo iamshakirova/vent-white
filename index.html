@@ -37,13 +37,61 @@
                 <a href="https://wa.me/+77771665753" class="fa-brands fa-whatsapp"></a>
                 <a href="mailto:igc-kz@mail.ru" class="fa-regular fa-envelope"></a>
             </div>
+            <div class="nav">
+                <div>
+                    <div>
+                        <a class="fa-solid fa-phone" href="tel:+77071786965"></a>
+                    </div>
+                    <div>
+                        <a class="fa-solid fa-phone" href="tel:+77771665753"></a>
+                    </div>
+                    <div>
+                        <a href="https://t.me/+77071786965" class="fa-brands fa-telegram"></a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="https://wa.me/+77771665753" class="fa-brands fa-whatsapp"></a>
+                    </div>
+                    <div>
+                        <a href="mailto:igc-kz@mail.ru" class="fa-regular fa-envelope"></a>
+                    </div>
+                    <div class="i-navigation">
+                        <i onclick="showFirstMobile()" class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="navigation">
-            <a>Главная</a>
-            <a>Продукция</a>
-            <a>О нас</a>
-            <a>Проекты</a>
-            <a>Контакты</a>
+            <a class="menu_link" data-goto=".home">Главная</a>
+            <a class="menu_link" data-goto=".products">Продукция</a>
+            <a class="menu_link" data-goto=".about-inner" >О нас</a>
+            <a class="menu_link" data-goto=".slider">Проекты</a>
+            <a class="menu_link" data-goto=".contacts">Контакты</a>
+        </div>
+        <div id="mobilelAdapt" class="burger">
+            <ul>
+                <li ><a class="menu_link" data-goto=".home">Главная</a></li>
+                <li ><a class="menu_link" data-goto=".products">Продукция</a></li>
+                <li ><a class="menu_link" data-goto=".about-inner">О нас</a></li>
+                <li ><a class="menu_link" data-goto=".slider">Проекты</a></li>
+                <li ><a class="menu_link" data-goto=".contacts">Контакты</a></li>
+            </ul>
+            <i onclick="closeFirstMobile()" href="">
+                X
+            </i>
+            <div class="nav-num">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+77071786965">+7 707 178 69 65</a>
+            </div>
+            <div class="nav-num">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+77771665753">+7 777 166 57 53</a>
+            </div>
+            <div class="nav-num">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:igc-kz@mail.ru">igc-kz@mail.ru</a>
+            </div>
         </div>
     </header>
     <section class="home">
@@ -177,7 +225,7 @@
             <h1>Преимущества нашей компании</h1>
             <div class="company-content">
                 <div class="first">
-                    <img src="images/logo.jpeg" alt="">
+                    <img src="images/logo2.png" alt="">
                 </div>
                 <div class="content">
                     <img src="images/lider.jpeg" alt="">
@@ -208,7 +256,7 @@
     <section class="forms">
         <h1>ЗАПОЛНИТЕ ФОРМУ И МЫ ПОДГОТОВИМ</h1>
         <h2>ИНДИВИДУАЛЬНОЕ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</h2>
-        <div class="forms-inner container">
+        <div class=" forma container">
             <div class="form-icon">
                 <div class="icon-flex">
                     <div class="icon">
@@ -227,14 +275,16 @@
                 <div class="icon-ph">
                     <a href="tel:+77771665753" class="fa-solid fa-phone">+7 777 166 57 53</a>
                 </div>
-
             </div>
-            <form action="sender.php" method="post">
-                <input class="first-form-f name" type="name" name="name" placeholder="Имя" required>
-                <input class="first-form-f phone" type="phone" name="phone" placeholder="Телефон" required> 
-                <button class="send-form" type="button">Отправить сообщение</button>
-                <div class="status"></div>
-            </form>
+            <div class="forms-inner">
+                <form action="sender.php" method="post">
+                    <input class="first-form-f name" type="name" name="name" placeholder="Имя" required>
+                    <input class="first-form-f phone" type="phone" name="phone" placeholder="Телефон" required> 
+                    <button class="send-form" type="button">Отправить сообщение</button>
+                    <div class="status"></div>
+                </form>
+            </div>
+           
         </div>
     </section>
     <section class="slider">
@@ -421,7 +471,7 @@
                     <a href="mailto:igc-kz@mail.ru" class="fa-regular fa-envelope"></a>
                 </div>
             </div>
-            <p>Г.Алматы, Искендирова 29</p>
+            <p>Г.Алматы, Искендирова 21</p>
         </div>
         <form action="sender.php" method="post" class="contacts-form">
             <input type="name" name="name" class="name" placeholder="Имя:" required>

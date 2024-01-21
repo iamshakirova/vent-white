@@ -7,9 +7,10 @@
 }
 .prod-filling{
     display: flex;
-    justify-content: space-between;  
+    justify-content: center;  
     text-align: left;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .prod{
     width: 220px;
@@ -75,4 +76,17 @@
 }
 .prod-filling .prod:nth-child(8){
     height: 500px;
+}
+
+@media(max-width:390px){
+    .products-inner>h1 {
+        font-size: 20px;
+        width: 60%;
+    }
+}
+@media(max-width:350px){
+    .products-inner>h1 {
+        font-size: 20px;
+        width: 80%;
+    }
 }

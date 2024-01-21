@@ -4,18 +4,18 @@ $('.slider-nav').slick({
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 785,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '0px',
           slidesToShow: 3
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1
@@ -32,4 +32,34 @@ function showFirstAdapt(){
 }
 function closeFirstAdapt(){
     modal.classList.remove('active-form')
+}
+
+
+let Mobilemodal = document.getElementById('mobilelAdapt')
+function showFirstMobile(){
+    Mobilemodal.classList.add('mobile-modal')
+}
+function closeFirstMobile(){
+    Mobilemodal.classList.remove('mobile-modal')
+}
+
+
+const menuLinks = document.querySelectorAll('.menu_link[data-goto]');
+if(menuLinks.length > 0){
+  menuLinks.forEach(menuLink => {
+    menuLink.addEventListener("click", onMenuLinkClick);
+  });
+  function onMenuLinkClick(e){
+    const menuLink = e.target;
+    if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+      const gotoBlock = document.querySelector(menuLink.dataset.goto);
+      const gotoBlockValue = gotoBlock.getBoundingClientRect().top;
+
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: "smooth"
+      });
+      e.preventDefault()
+    }
+  }
 }

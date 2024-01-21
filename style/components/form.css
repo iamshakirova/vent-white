@@ -27,6 +27,13 @@
     border: 1px solid #d5dae0;
    
 }
+.forma{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   
+
+}
 .forms-inner input{
     height: 44px;
     padding-left: 30px;
@@ -51,11 +58,11 @@
     background-color: transparent;
     cursor: pointer;
 }
-.form-icon{
+/* .form-icon{
     position: absolute;
     top: 240px;
     left: 130px;
-}
+} */
 .icon{
     margin-bottom: 10px;
 }
@@ -83,4 +90,71 @@
     margin-right: 70px;
     text-decoration: none;
     margin-bottom: 10px;
+}
+@media(max-width:920px){
+    .forma{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .forms{
+        background-position: bottom;
+    }
+    .icon{
+        width: 50px;
+    }
+    .icon-ph a {
+        margin-right: 0;
+    }
+}
+
+
+@media(max-width:600px){
+    .forms h1{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .forms h2{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .forms-inner button{
+        width: 100%;
+    }
+    .forms-inner{
+        width: 70%;
+    }
+    
+}
+
+@media(max-width:400px){
+    .icon a{
+        font-size: 30px;
+        margin-right: 0;
+    }
+    .icon-ph a{
+        font-size: 15px;
+    }
+    .forms-inner {
+        width: 65%;
+    }
+    .forms-inner button {
+        font-size: 10px;
+    }
+    .forms-inner input::placeholder{
+        font-size: 10px;
+    }
+
+}
+@media(max-width:350px){
+    .forms h1{
+        font-size: 15px;
+        padding: 0 20px;
+    }
+    .forms h2{
+        font-size: 15px;
+        padding: 0 20px;
+    }
+    .slider-nav img {
+        height: 120px;
+    }
 }

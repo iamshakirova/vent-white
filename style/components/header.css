@@ -1,3 +1,6 @@
+.contacts{
+    margin-top: 150px;
+}
 .head-container{
     padding: 5px 100px;
     display: flex;
@@ -72,4 +75,150 @@
     padding: 0 5px;
     cursor: pointer;
     text-decoration: none;
+}
+.nav{
+    display: none;
+    justify-content: space-between;
+    gap: 10px;
+    align-items:center;
+
+}
+.nav a{
+    color:#014ea2;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.nav i{
+    color:#014ea2;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin: 0;
+}
+.i-navigation{
+    display: none;
+}
+.showNav{
+    display: block;
+}
+.burger{
+    display: none;
+    /* justify-content: center;
+    flex-wrap: wrap; */
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    width: 220px;
+    height: 300px;
+    overflow: hidden;
+    top: 125px;
+    right: 0;
+    background-color: rgba(6, 6, 81, 0.655);
+    z-index: 200;
+    padding: 0 50px 0 60px;
+}
+
+.burger li{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+.burger ul{
+    padding: 20px;
+}
+.burger>i{
+    position: absolute;
+    right: 30px;
+    color: #fff;
+    font-size: 20px;
+}
+.nav-num i{
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+.nav-num a{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+@media(max-width:1135px){
+    .head-numbers, .head-media{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        padding: 5px 0;
+    }
+}
+@media(max-width:800px){
+    .navigation{
+        display: none;
+    }
+    .i-navigation{
+        display: block;
+    }
+    .mobile-modal{
+        display: flex;
+    }
+   
+
+}
+@media(max-width:750px){
+    .head-container{
+        padding:0 20px;
+
+    }
+    .head-logo h1{
+        font-size: 15px;
+    }
+    .burger{
+        top: 120px;
+    }
+}
+@media(max-width:550px){
+    .head-container img {
+        width: 120px;
+    }
+    .head-logo h1 {
+        font-size: 10px;
+    }
+    .nav a {
+        font-size: 15px;
+    }
+    .nav i {
+        font-size: 15px;
+    }
+    .burger{
+        top: 70px;
+        width: 170px;
+        padding: 10px 50px;
+    }
+
+}
+@media(max-width:350px){
+    .head-container img {
+        width: 100px;
+    }
+    .burger li{
+        font-size: 10px;
+    }
+    .nav-num i{
+        font-size: 10px;
+    }
+    .nav-num a{
+        font-size: 10px;
+    }
+    .burger{
+        width: 130px;
+        height: 200px;
+        padding: 10px 20px;
+    }
+    .burger>i{
+        font-size: 10px;
+    }
 }
